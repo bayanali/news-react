@@ -1,0 +1,108 @@
+/* page-footer start */
+
+.page-footer {
+  border-top: 5px solid #c93034;
+  background-color: #000;
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-transform: uppercase;
+  position: absolute;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  left: 0px;
+  right: 0px;
+}
+
+.page-footer ul {
+  padding: 0;
+}
+
+.page-footer li {
+  list-style: none;
+}
+
+.page-footer h5 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.page-footer h6 {
+  color: rgb(163, 163, 163);
+  font-size: 11px;
+}
+
+.aEdit1 {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1.737;
+}
+
+.aEdit2 {
+  font-size: 13px;
+  color: rgb(163, 163, 163);
+  text-transform: uppercase;
+  line-height: 1.737;
+}
+
+.page-footer select {
+  height: 30px;
+  width: 150px;
+  background-color: rgb(33, 33, 33);
+  border: solid rgb(33, 33, 33);
+  color: rgb(100, 100, 100);
+  /* border-radius: 0px; */
+}
+
+.page-footer .icons a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  color: rgb(201, 48, 52);
+  text-decoration: none;
+}
+
+.page-footer .input-group input[type="text"] {
+  background-color: rgb(33, 33, 33);
+  border: solid rgb(33, 33, 33);
+
+}
+
+.page-footer .input-group  input[type="text"]::placeholder {
+  color: rgb(100, 100, 100);
+  text-transform: uppercase;
+  font-size: 11.5px;
+}
+
+.page-footer .img-icon {
+  height: 13px;
+  width: 8px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page-footer .input-group {
+  width: 200px;
+  height: 30px;
+}
+
+.page-footer .input-group button {
+  border-radius: 0px;
+  background-color: rgb(46, 46, 46);
+  border: solid rgb(46, 46, 46);
+
+}
+
+.page-footer .edit-logo {
+  width: 135%;
+  height: auto;
+}
+
+/* page-footer end */
