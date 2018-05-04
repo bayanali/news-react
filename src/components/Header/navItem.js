@@ -1,28 +1,31 @@
 import React from 'react'
+import './NavItem.css'
+
 
 const navItem = () => {
+  let color = {color: "#fff"};
   return (
-    <ul className="navbar-nav mr-auto">
+    <ul id="ul" className="navbar-nav mr-auto">
       <li className="nav-item">
-        <a className="nav-link active" href="#">Home</a>
+        <a id="a" className="nav-link active" href="/">Home</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Style<span className="sr-only">(current)</span></a>
+        <a id="a" className="nav-link" href="style">Style<span className="sr-only">(current)</span></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Grooming</a>
+        <a id="a" className="nav-link" href="/not-found">Grooming</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Women</a>
+        <a id="a" className="nav-link" href="/not-found">Women</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Entertainment</a>
+        <a id="a" className="nav-link" href="/article">Entertainment</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Culture</a>
+        <a id="a" className="nav-link" href="/not-found">Culture</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Videos</a>
+        <a id="a" className="nav-link" href="/internal-server-error">Videos</a>
       </li>
     </ul>
 

@@ -2,9 +2,10 @@ import React from 'react'
 import logo from '../../images/logo.png'
 
 const navLogo = () => {
+  let width = {width: '70%'};
   return (
     <a className="navbar-brand" href="#">
-      <img src={logo} alt="" />
+      <img style={width} src={logo} alt="" />
     </a>
   )
 };

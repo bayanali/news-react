@@ -1,12 +1,13 @@
-import React from 'react'
-import NavLogo from './navLogo'
-import NavSearch from './navSearch'
-import NavItem from './navItem'
+import React from 'react';
+import NavLogo from './navLogo';
+import NavSearch from './navSearch';
+import NavItem from './navItem';
+import './NavBar.css';
 
 
-const navBar = () => {
+const navBar = (props) => {
   return (
-    <nav className="main-nav navbar navbar-expand-lg navbar-light">
+    <nav style={props.color} className="main-nav navbar navbar-expand-lg navbar-light">
       <div className="container">
         <NavLogo />
 

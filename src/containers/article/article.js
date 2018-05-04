@@ -1,10 +1,13 @@
 import React from 'react';
 import './article.css';
+import Carousel from '../../components/Header/carousel';
 import logo from '../../images/logo.png';
 
-
 const article = () => {
+  // NOTE: Please don't remove the Carousel; just put your work beneath it.
   return (
+    <div>
+    <Carousel />
 
     <div id="article" class="container">
     <br/>
@@ -105,6 +108,7 @@ const article = () => {
                                                            </div>
                                                           </div>
                                                         </div>
+                      </div>
   )
 };
 
