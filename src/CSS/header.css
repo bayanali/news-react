@@ -28,14 +28,6 @@
     font-family: 'lato', FontAwesome;
 }
 
-/*changed container width */
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 970px;
-    }
-}
-
 
 .big-post {
     background-color: #fff;
