@@ -1,0 +1,157 @@
+/* for article page */
+.articleicons {
+  font-size: 18px;
+  width: 500px;
+}
+#article .twitterpink {
+  color: #c93034;
+  text-decoration: none;
+}
+#article a:hover{
+  text-decoration: none;
+}
+
+#article-title {
+  font-size: 40px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  /* position: absolute;
+  left: 348.538px;
+  top: 944.761px;
+  width: 1140px;
+  height: 104px;
+  z-index: 37; */
+}
+
+
+.article-body{
+  font-size: 20px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: justify;
+  /* position: absolute;
+  left: 349.094px;
+  top: 1179.828px;
+  width: 1217px;
+  height: 460px;
+  z-index: 39; */
+}
+
+#article-author{
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 2.723;
+  text-align: justifyLeft;
+  /* -moz-transform: matrix( 1.24402801498156,0,0,1.28298863877247,0,0);
+  -webkit-transform: matrix( 1.24402801498156,0,0,1.28298863877247,0,0);
+  -ms-transform: matrix( 1.24402801498156,0,0,1.28298863877247,0,0);
+  position: absolute;
+  left: 391.749px;
+  top: 1081.854px;
+  width: 70.955px;
+  height: 9.064px;
+  z-index: 64; */
+}
+
+#article-image {
+  background-color: rgb(201, 48, 52);
+  position: absolute;
+  left: 349px;
+  top: 1662px;
+  width: 1221px;
+  height: 514px;
+  z-index: 51;
+}
+
+
+#article-time{
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 2.723;
+  text-align: justifyLeft;
+  /* -moz-transform: matrix( 1.24402801498156,0,0,1.28298863877247,0,0);
+  -webkit-transform: matrix( 1.24402801498156,0,0,1.28298863877247,0,0);
+  -ms-transform: matrix( 1.24402801498156,0,0,1.28298863877247,0,0);
+  position: absolute;
+  left: 558.872px;
+  top: 1081.854px;
+  width: 59.666px;
+  height: 9.064px;
+  z-index: 65; */
+}
+
+#article-footer{
+  font-size: 15px;
+  font-family: "Lato";
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.867;
+  /* -moz-transform: matrix( 0.90299404123331,0,0,0.92,0,0);
+  -webkit-transform: matrix( 0.90299404123331,0,0,0.92,0,0);
+  -ms-transform: matrix( 0.90299404123331,0,0,0.92,0,0);
+  position: absolute;
+  left: 351.858px;
+  top: 2583.498px;
+  z-index: 85; */
+}
+
+.btn-text {
+  font-size: 30px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: justifyLeft;
+  /* -moz-transform: matrix( 0.692,0,0,0.69411764705882,0,0);
+  -webkit-transform: matrix( 0.692,0,0,0.69411764705882,0,0);
+  -ms-transform: matrix( 0.692,0,0,0.69411764705882,0,0);
+  position: absolute;
+  left: 871.991px;
+  top: 2706px;
+  z-index: 110; */
+
+}
+.btn-article {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  /* border-radius: 4px; */
+  color: #fff;
+  background-color:  rgb(201, 48, 52);
+  border-color:  rgb(201, 48, 52);
+}
+
+
+.cont {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.cont img {
+  width: 100%;
+  height: auto;
+}
