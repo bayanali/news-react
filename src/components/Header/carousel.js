@@ -1,9 +1,6 @@
 import React from 'react'
-import CarouselIndicators from './carouselIndicators'
-import CarouselContent from './carouselContent'
-import CarouselItem from './carouselItem'
 import {Carousel} from 'react-bootstrap'
-import fb from '../images/home/fb.jpg'
+import fb from '../../images/home/fb.jpg'
 
 const carousel = () => {
   const carouselItems = [
@@ -13,23 +10,25 @@ const carousel = () => {
   ];
   return (
     <Carousel className="main-carousel">
-      <Carousel.Item>
-        <img alt="first slide" src={carouselItems[0].imgsrc} />
-        <Carousel.Caption>
+      <Carousel.Item className="inner-carousel">
+        <img alt="first slide" src={carouselItems[0].imgsrc} className="d-block w-100" />
+        <Carousel.Caption className="carousel-caption caption-header">
           {carouselItems[0].title}
           <p>{carouselItems[0].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img alt="first slide" src={carouselItems[1].imgsrc} />
-        <Carousel.Caption>
+
+      <Carousel.Item className="inner-carousel">
+        <img alt="first slide" src={carouselItems[1].imgsrc} className="d-block w-100" />
+        <Carousel.Caption className="carousel-caption caption-header">
           {carouselItems[1].title}
           <p>{carouselItems[1].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img alt="first slide" src={carouselItems[2].imgsrc} />
-        <Carousel.Caption>
+
+      <Carousel.Item className="inner-carousel">
+        <img alt="first slide" src={carouselItems[2].imgsrc} className="d-block w-100" />
+        <Carousel.Caption className="carousel-caption caption-header">
           {carouselItems[2].title}
           <p>{carouselItems[2].body}</p>
         </Carousel.Caption>
