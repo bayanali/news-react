@@ -1,17 +1,19 @@
-img {
+/* removed this because it affects img-fluid */
+/* img {
   display: block;
   margin: 0 auto;
   width: 53%;
-}
+} */
 
-p {
+/* removed this  bc affects all paragraph elements - no p elements in error so its okay*/
+/* p {
   margin: 3em 0;
   font-weight: bold;
-  /* font-family: "Lato"; */
+  /* font-family: "Lato"; 
   letter-spacing: 1.7px;
   font-size: 20px;
   line-height: normal;
-}
+} */
 
 .error-content {
   text-align: center;
