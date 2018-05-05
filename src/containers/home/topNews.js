@@ -3,9 +3,12 @@ import './Home.css';
 import fb2 from '../../images/home/fb-2.jpg';
 import fb3 from '../../images/home/fb-3.jpg';
 import fb4 from '../../images/home/fb-4.jpg';
+import salah from '../../images/home/salah.jpg';
+import mark from '../../images/home/fb.jpg';
 import avatar from '../../images/avatar.png';
 import homeVideo from '../../images/home/Homevideo.png';
 import homeLive from '../../images/home/Homelive.png';
+import {Carousel} from 'react-bootstrap'
 
 const topNews = () => {
   const news = [
@@ -148,16 +151,11 @@ const topNews = () => {
         <div id="myTabContent" className="tab-content">
 
           <div className="tab-pane fade active show" id="sports">
-            <div id="carousel-sports" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
-                <li data-target="#carousel-sports" data-slide-to="0" className="active"></li>
-                <li data-target="#carousel-sports" data-slide-to="1"></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
+            <Carousel id="carousel-sports">
+              <Carousel.Item>
                   <div className="row no-gutters">
                     <div className="col-7 ">
-                      <img src="images\home\salah.jpg" alt="" className="img-fluid" />
+                      <img src={salah} alt="" className="img-fluid" />
                     </div>
                     <div className="col-5 homeslider-right">
                       <div className="slidertitle">
@@ -179,11 +177,12 @@ const topNews = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="carousel-item">
+                </Carousel.Item>
+
+                <Carousel.Item>
                   <div className="row no-gutters">
                     <div className="col-7 ">
-                      <img src="images\home\salah.jpg" alt="" className="img-fluid" />
+                      <img src={salah} alt="" className="img-fluid" />
                     </div>
                     <div className="col-5 homeslider-right">
                       <div className="slidertitle">
@@ -205,98 +204,72 @@ const topNews = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-
-              </div>
-              <a className="carousel-control-prev" href="#carousel-sports" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only"></span>
-              </a>
-              <a className="carousel-control-next" href="#carousel-sports" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only"></span>
-              </a>
-            </div>
-
+                </Carousel.Item>
+            </Carousel>
           </div>
 
 
           <div className="tab-pane fade show" id="life">
-
-            <div id="carousel-life" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
-                <li data-target="#carousel-life" data-slide-to="0" className="active"></li>
-                <li data-target="#carousel-life" data-slide-to="1"></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <div className="row no-gutters">
-                    <div className="col-7 ">
-                      <img src="images\home\police.jpg" alt="" className="img-fluid" />
+          <Carousel id="carousel-life">
+            <Carousel.Item>
+                <div className="row no-gutters">
+                  <div className="col-7 ">
+                    <img src={mark} alt="" className="img-fluid" />
+                  </div>
+                  <div className="col-5 homeslider-right">
+                    <div className="slidertitle">
+                      <p> soooooooooooooooooooso </p>
                     </div>
-                    <div className="col-5 homeslider-right">
-                      <div className="slidertitle">
-                        <p> Mohamed Salah can improve in front of goal, says Jurgen Klopp </p>
-                      </div>
-                      <div className="sliderbody">
-                        <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
-                        <hr className="hr-home-slider"/>
-                        <div className="row homeslider-right-footer">
-                          <div className="col-4">
-                            <a href="#"> read more</a>
-                          </div>
-                          <div className="offset-5 col-3">
-                            <a href="#" className="fa fa-facebook"></a>
-                            <a href="#" className="fa fa-twitter"></a>
-                            <a href="#" className="fa fa-linkedin"></a>
-                          </div>
+                    <div className="sliderbody">
+                      <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
+                      <hr className="hr-home-slider"/>
+                      <div className="row homeslider-right-footer">
+                        <div className="col-4">
+                          <a href="#"> read more</a>
+                        </div>
+                        <div className="offset-5 col-3">
+                          <a href="#" className="fa fa-facebook"></a>
+                          <a href="#" className="fa fa-twitter"></a>
+                          <a href="#" className="fa fa-linkedin"></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="carousel-item">
-                  <div className="row no-gutters">
-                    <div className="col-7 ">
-                      <img src="images\home\police.jpg" alt="" className="img-fluid" />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <div className="row no-gutters">
+                  <div className="col-7 ">
+                    <img src={mark} alt="" className="img-fluid" />
+                  </div>
+                  <div className="col-5 homeslider-right">
+                    <div className="slidertitle">
+                      <p> Mohamed Salah can improve in front of goal, says Jurgen Klopp </p>
                     </div>
-                    <div className="col-5 homeslider-right">
-                      <div className="slidertitle">
-                        <p> Mohamed Salah can improve in front of goal, says Jurgen Klopp </p>
-                      </div>
-                      <div className="sliderbody">
-                        <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
-                        <hr className="hr-home-slider"/>
-                        <div className="row homeslider-right-footer">
-                          <div className="col-4">
-                            <a href="#"> read more</a>
-                          </div>
-                          <div className="offset-5 col-3">
-                            <a href="#" className="fa fa-facebook"></a>
-                            <a href="#" className="fa fa-twitter"></a>
-                            <a href="#" className="fa fa-linkedin"></a>
-                          </div>
+                    <div className="sliderbody">
+                      <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
+                      <hr className="hr-home-slider"/>
+                      <div className="row homeslider-right-footer">
+                        <div className="col-4">
+                          <a href="#"> read more </a>
+                        </div>
+                        <div className="offset-5 col-3">
+                          <a href="#" className="fa fa-facebook"></a>
+                          <a href="#" className="fa fa-twitter"></a>
+                          <a href="#" className="fa fa-linkedin"></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-              </div>
-              <a className="carousel-control-prev" href="#carousel-life" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only"></span>
-              </a>
-              <a className="carousel-control-next" href="#carousel-life" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only"></span>
-              </a>
-            </div>
-
+              </Carousel.Item>
+            </Carousel>
           </div>
 
         </div>
       </div>
+
       <div className="container-elements">
         <img src={homeLive} alt="" className="img-fluid" />
       </div>

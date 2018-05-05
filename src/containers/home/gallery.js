@@ -1,51 +1,46 @@
 import React from 'react'
+import {Carousel} from 'react-bootstrap'
+import fb2 from '../../images/home/fb-2.jpg';
+import fb3 from '../../images/home/fb-3.jpg';
+import fb4 from '../../images/home/fb-4.jpg';
 import './Home.css';
 
 const gallery = () => {
+  const galleryContent = [
+    {title: 'Faceblock campaign urges users to boycott Facebook for a day', img: fb2},
+    {title: 'Faceblock campaign urges users to boycott Facebook for a day', img: fb3},
+    {title: 'Faceblock campaign urges users to boycott Facebook for a day', img: fb4}
+  ];
   return (
 
     <div className="container" id="gallery">
       <h5 className="headingline"><span className="section-heading2">gallery</span></h5>
       <hr className="hrstyle"/>
 
-      <div id="carousel-gallery" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#carousel-gallery" data-slide-to="0" className="active"></li>
-          <li data-target="#carousel-gallery" data-slide-to="1"></li>
-          <li data-target="#carousel-gallery" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img className="d-block w-100" src="images\home\fb-2.jpg" />
-            <div className="carousel-caption-white title my-auto">
-              <h4>Faceblock campaign urges users to boycott Facebook for a day</h4>
-            </div>
+      <Carousel id="carousel-gallery">
+        <Carousel.Item>
+          <img className="d-block w-100" src={galleryContent[0].img} />
+          <div className="carousel-caption-white title my-auto">
+            <h4>{galleryContent[0].title}</h4>
           </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="images\home\fb-3.jpg" />
+        </Carousel.Item>
+
+        <Carousel.Item>
+            <img className="d-block w-100" src={galleryContent[1].img} />
             <div className="carousel-caption-white">
-              <h4>Faceblock campaign urges users to boycott Facebook for a day</h4>
+              <h4>{galleryContent[1].title}</h4>
             </div>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img className="d-block w-100" src={galleryContent[2].img} />
+          <div className="carousel-caption-white">
+            <h4>{galleryContent[2].title}</h4>
           </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="images\home\fb-4.jpg" />
-            <div className="carousel-caption-white">
-              <h4>Faceblock campaign urges users to boycott Facebook for a day</h4>
-            </div>
-          </div>
-        </div>
-        <a className="carousel-control-prev" href="#carousel-gallery" role="button" data-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only"></span>
-        </a>
-        <a className="carousel-control-next" href="#carousel-gallery" role="button" data-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only"></span>
-        </a>
+        </Carousel.Item>
+
+        </Carousel>
       </div>
-
-    </div>
-
   );
 }
 

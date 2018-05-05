@@ -2,6 +2,9 @@
   margin-top: 600px;  /* so the content appears below the carousel */
 }
 
+#gallery{
+  margin-bottom: 50px;
+}
 
 .big-post {
   background-color: #fff;
@@ -17,7 +20,6 @@
   font-size: 75%;
   font-weight: bold;
   line-height: 2.723;
-
 }
 
 .small-post {
