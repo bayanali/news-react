@@ -1,0 +1,197 @@
+#home-page {
+  margin-top: 600px;  /* so the content appears below the carousel */
+}
+
+#gallery{
+  margin-bottom: 50px;
+}
+
+.container-elements{
+  margin: 50px 0px 50px 0px;
+}
+
+.hrstyle {
+    border-top: 1px solid #797979;
+    opacity: 0.502;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    padding: 5px 7px 5px 7px;
+    font-size: 15px;
+    line-height: 1.833;
+    background-color: #c93034;
+    color: #fff;
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-heading2 {
+    padding: 5px 25px 5px 25px;
+    font-size: 16px;
+    line-height: 1.833;
+    background-color: #c93034;
+    color: #fff;
+    font-family: "Lato";
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.headingline {
+  margin-bottom: 0px;
+}
+
+
+.img-wrapper-home {
+    position: relative;
+}
+
+.img-overlay-home {
+    position: absolute;
+    top: 65%;
+    bottom: 0;
+    left: 42%;
+    text-align: left;
+}
+.event-btn-home {
+    color: #fff !important;
+    border-color: #fff !important;
+    border-radius: 0 !important;
+    border-width: 2px !important;
+    width: 200px !important;
+    height: 30px !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+    padding-bottom: 30px !important;
+    text-transform: uppercase !important;
+}
+.event-btn-home:hover {
+    background-color: #c93034 !important;
+}
+
+.hrhome{
+  border-top: 1px solid rgb(192, 192, 192);
+  width: 95%;
+}
+
+.nav-home{
+    font-size: 15px;
+    font-family: "Lato";
+    color: rgb(128, 128, 127);
+    text-transform: uppercase;
+    line-height: 1.167;
+    text-align: justifyLeft;
+}
+
+.nav-link-home{
+  color: #a2a2a0;
+  margin: 0px;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-link-home:hover{
+  text-decoration: none;
+  font-family: "Lato";
+  font-weight: 600;
+  color: #80807f;
+}
+
+.homeslider{
+  max-height: 500px;
+}
+.homeslider-right{
+  background-color: #fff;
+}
+
+.slidertitle p{
+  font-size: 21px;
+  font-family: "Lato";
+  /* margin-left: 29px;
+  margin-top: 30px;
+  margin-right: 50px; */
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.464;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justifyLeft;
+
+}
+
+
+.sliderbody p{
+    font-size: 12px;
+    font-family: "Lato";
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.59;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-left: 29px;
+    padding-top: 30px;
+    padding-right: 50px; */
+}
+
+.hr-home-slider{
+  border-top: 1px solid #797979;
+  opacity: 0.502;
+  margin-left: 29px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.homeslider-right-footer {
+  margin-left: 100px;
+  /* margin-top: 30px; */
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+
+.news-option {
+    font-family: 'latosemibold';
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 70% !important;
+}
+
+
+.carousel-caption-white h4{
+  font-weight: bold;
+}
+
+.carousel-caption-white {
+    background: #ffffff;
+    position: absolute;
+    color: black;
+    bottom: 0%;
+    left: 0%;
+    right: 15%;
+    width: 15%;
+    height: 40%;
+    z-index: 10;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    text-shadow: none;
+    font-family: 'Lato';
+    font-weight: 900;
+}
+
+.carousel-caption-white .btn {
+    text-shadow: none;
+}
