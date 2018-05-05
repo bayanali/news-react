@@ -2,6 +2,19 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Carousel from '../../components/Header/carousel';
 import './Style.css';
+import avatar from '../../images/avatar.png';
+import time from '../../images/time.png';
+import bigpost from '../../images/bigpost.jpg';
+import post1 from '../../images/post1.jpg';
+import post2 from '../../images/post2.jpg';
+import post3 from '../../images/post3.jpg';
+import star from '../../images/star.png';
+import mail from '../../images/mail.png';
+import post from '../../images/post.jpg';
+import ad from '../../images/ad.PNG';
+import call from '../../images/call.jpg';
+import article from '../../images/article/article.png'
+import event from '../../images/event.jpg';
 
 export default class Style extends Component {
   
@@ -20,7 +33,7 @@ export default class Style extends Component {
             <div className="col big-post">
               <div className="row">
                 <div className="col">
-                  <img src="images/bigpost.jpg" className="img-fluid"/>
+                  <img src={bigpost} className="img-fluid"/>
                 </div>
               </div>
               <br/>
@@ -35,10 +48,10 @@ export default class Style extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col my-auto post-details">
-                    <img src="images/avatar.png" className="img-fluid post-details-img "/> Amruismail
+                    <img src={avatar} className="img-fluid post-details-img "/> Amruismail
                   </div>
                   <div className="col my-auto post-details">
-                    <img src="images/time.png" className="img-fluid post-details-img"/> 25 mins ago
+                    <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                   </div>
                   <div className="col">
                     <a className="post-details" href="#">Read more</a>
@@ -49,7 +62,7 @@ export default class Style extends Component {
             <div className="col small-post">
               <div className="row">
                 <div className="col">
-                  <img src="images/post1.jpg" className="img-fluid"/>
+                  <img src={post1} className="img-fluid"/>
                 </div>
                 <div className="col my-auto">
                   <p>Lorem ipsum dolor sit amet, consul molestiae inciderint eos ne, no accumsan adipisci qualisque cum, debet conceptam nec te. Exerci detraxit consectetuer pri et.</p>
@@ -58,7 +71,7 @@ export default class Style extends Component {
               </div>
               <div className="row">
                 <div className="col">
-                  <img src="images/post2.jpg" className="img-fluid" align="left"/>
+                  <img src={post2} className="img-fluid" align="left"/>
                 </div>
                 <div className="col my-auto">
                   <p>Lorem ipsum dolor sit amet, consul molestiae inciderint eos ne, no accumsan adipisci qualisque cum, debet conceptam nec te. Exerci detraxit consectetuer pri et.</p>
@@ -68,7 +81,7 @@ export default class Style extends Component {
               </div>
               <div className="row">
                 <div className="col">
-                  <img src="images/post3.jpg" className="img-fluid" />
+                  <img src={post3} className="img-fluid" />
                 </div>
                 <div className="col my-auto">
                   <p>Lorem ipsum dolor sit amet, consul molestiae inciderint eos ne, no accumsan adipisci qualisque cum, debet conceptam nec te. Exerci detraxit consectetuer pri et.</p>
@@ -86,10 +99,10 @@ export default class Style extends Component {
               More news on #Egypt
             </div>
             <div className="col news-option">
-              <img src="images/star.png" className="img-fluid"/> Following
+              <img src={star} className="img-fluid"/> Following
             </div>
             <div className="col news-option">
-              <img src="images/mail.png" className="img-fluid"/>
+              <img src={mail} className="img-fluid"/>
               <a href="#">Get Email updates</a>
             </div>
             <div className="col">
@@ -106,7 +119,7 @@ export default class Style extends Component {
         <h5 className="headingline"><span className="section-heading2">Events </span></h5>
         <hr className="hrstyle"/>
         <div className="img-wrapper">
-          <img className="img-fluid" src="images/event.jpg"/>
+          <img className="img-fluid" src={event}/>
           <div className="img-overlay">
             <button className="btn btn-outline-primary event-btn">Read More</button>
           </div>
@@ -153,7 +166,7 @@ export default class Style extends Component {
             <div className="col big-post">
               <div className="row">
                 <div className="col">
-                  <img src="images/post.jpg" className="img-fluid"/>
+                  <img src={post} className="img-fluid"/>
                 </div>
               </div>
               <br/>
@@ -169,10 +182,10 @@ export default class Style extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col my-auto post-details">
-                    <img src="images/avatar.png" className="img-fluid post-details-img "/> Amruismail
+                    <img src={avatar} className="img-fluid post-details-img "/> Amruismail
                   </div>
                   <div className="col my-auto post-details">
-                    <img src="images/time.png" className="img-fluid post-details-img"/> 25 mins ago
+                    <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                   </div>
                   <div className="col">
                     <a className="post-details" href="#">Read more</a>
@@ -183,7 +196,7 @@ export default class Style extends Component {
             <div className="col big-post">
               <div className="row">
                 <div className="col">
-                  <img src="images/post.jpg" className="img-fluid"/>
+                  <img src={post} className="img-fluid"/>
                 </div>
               </div>
               <br/>
@@ -199,10 +212,10 @@ export default class Style extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col my-auto post-details">
-                    <img src="images/avatar.png" className="img-fluid post-details-img "/> Amruismail
+                    <img src={avatar} className="img-fluid post-details-img "/> Amruismail
                   </div>
                   <div className="col my-auto post-details">
-                    <img src="images/time.png" className="img-fluid post-details-img"/> 25 mins ago
+                    <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                   </div>
                   <div className="col">
                     <a className="post-details" href="#">Read more</a>
@@ -218,7 +231,7 @@ export default class Style extends Component {
               <div className="col big-post">
                 <div className="row">
                   <div className="col">
-                    <img src="images/post.jpg" className="img-fluid"/>
+                    <img src={post} className="img-fluid"/>
                   </div>
                 </div>
                 <br/>
@@ -234,10 +247,10 @@ export default class Style extends Component {
                 <div className="container">
                   <div className="row">
                     <div className="col my-auto post-details">
-                      <img src="images/avatar.png" className="img-fluid post-details-img "/> Amruismail
+                      <img src={avatar} className="img-fluid post-details-img "/> Amruismail
                     </div>
                     <div className="col my-auto post-details">
-                      <img src="images/time.png" className="img-fluid post-details-img"/> 25 mins ago
+                      <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                     </div>
                     <div className="col">
                       <a className="post-details" href="#">Read more</a>
@@ -248,7 +261,7 @@ export default class Style extends Component {
               <div className="col big-post">
                 <div className="row">
                   <div className="col">
-                    <img src="images/post.jpg" className="img-fluid"/>
+                    <img src={post} className="img-fluid"/>
                   </div>
                 </div>
                 <br/>
@@ -264,10 +277,10 @@ export default class Style extends Component {
                 <div className="container">
                   <div className="row">
                     <div className="col my-auto post-details">
-                      <img src="images/avatar.png" className="img-fluid post-details-img "/> Amruismail
+                      <img src={avatar} className="img-fluid post-details-img "/> Amruismail
                     </div>
                     <div className="col my-auto post-details">
-                      <img src="images/time.png" className="img-fluid post-details-img"/> 25 mins ago
+                      <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                     </div>
                     <div className="col">
                       <a className="post-details" href="#">Read more</a>
@@ -290,7 +303,7 @@ export default class Style extends Component {
         <br/><br/><br/>
 
         <div className="img-wrapper">
-          <img className="img-fluid" src="images/call.jpg"/>
+          <img className="img-fluid" src={call}/>
           <div className="call-img-overlay">
             <button className="btn btn-outline-primary event-btn">Read More</button>
           </div>
@@ -305,26 +318,26 @@ export default class Style extends Component {
             <div className="row">
               <div className="col">
                 <div className="ad">
-                  <img src="images/ad.PNG" className="img-fluid"/>
+                  <img src={ad} className="img-fluid"/>
                   <div className="caption">Lorem ipsum blandit rutrum, erat et egestas</div>
                 </div>
               </div>
               <div className="col">
                 <div className="ad">
-                  <img src="images/ad.PNG" className="img-fluid"/>
+                  <img src={ad} className="img-fluid"/>
                   <div className="caption">Lorem ipsum blandit rutrum, erat et egestas</div>
                 </div>
               </div>
               <div className="col">
                 <div className="ad">
-                  <img src="images/ad.PNG" className="img-fluid"/>
+                  <img src={ad} className="img-fluid"/>
                   <div className="caption">Lorem ipsum blandit rutrum, erat et egestas</div>
                 </div>
               </div>
             </div>
             <br/><br/>
             <div className = "cont">
-              <img src = "images\article\article.png" className = "img-fluid"/>
+              <img src = {article} className = "img-fluid"/>
               <button type="button" name="button" className = "btnn">Read More</button>
             </div>
 
