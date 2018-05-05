@@ -25,6 +25,7 @@ const pagination = (props) => {
           <button type="button" className="btn-article"><span className="prev-next-span">NEXT</span></button>
         </div>
       </div>
+      <br /><br/>
     </nav>
 
   );
