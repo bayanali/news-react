@@ -3,6 +3,31 @@
 }
 
 
+.big-post {
+  background-color: #fff;
+  /*    font-weight: bold;*/
+  text-align: left;
+  background-clip: content-box;
+  text-indent: inherit;
+}
+
+.post-details {
+  font-family: 'latolight';
+  text-transform: uppercase;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 2.723;
+
+}
+
+.small-post {
+  background-color: #fff;
+  font-weight: bold;
+  text-align: justify;
+  text-align: left;
+  background-clip: content-box;
+}
+
 .container-elements{
   margin: 50px 0px 50px 0px;
 }
@@ -57,14 +82,14 @@
 .event-btn-home {
     color: #fff !important;
     border-color: #fff !important;
-    border-radius: 0;
-    border-width: 2px;
-    width: 200px;
-    height: 30px;
-    font-size: 17px;
-    font-weight: bold;
-    padding-bottom: 30px;
-    text-transform: uppercase;
+    border-radius: 0 !important;
+    border-width: 2px !important;
+    width: 200px !important;
+    height: 30px !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+    padding-bottom: 30px !important;
+    text-transform: uppercase !important;
 }
 .event-btn-home:hover {
     background-color: #c93034 !important;

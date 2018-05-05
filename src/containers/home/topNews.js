@@ -3,7 +3,10 @@ import './Home.css';
 import fb2 from '../../images/home/fb-2.jpg';
 import fb3 from '../../images/home/fb-3.jpg';
 import fb4 from '../../images/home/fb-4.jpg';
-import avatar from '../../images/avatar.png'
+import avatar from '../../images/avatar.png';
+import homeVideo from '../../images/home/Homevideo.png';
+import homeLive from '../../images/home/Homelive.png';
+
 const topNews = () => {
   const news = [
     {title: 'Faceblock campaign urges users to boycott Facebook for a day', img: fb2},
@@ -11,7 +14,7 @@ const topNews = () => {
     {title: 'Faceblock campaign urges users to boycott Facebook for a day', img: fb4},
     {title: 'Faceblock campaign urges users to boycott Facebook for a day', img: fb3}
   ]
-  console.log(news);
+
   return (
     <div id="top_news" className="container">
 
@@ -43,7 +46,7 @@ const topNews = () => {
                   <img src={avatar} className="img-fluid post-details-img "  /> Amruismail
                 </div>
                 <div className="col my-auto post-details">
-                  <i className="fa fa-clock-o">25 mins ago</i>
+                  <a href="#" className="fa fa-clock-o" />25 MINS AGO
                 </div>
                 <div className="col">
                   <a className="post-details" href="#">Read more</a>
@@ -88,11 +91,10 @@ const topNews = () => {
             More news on #Egypt
           </div>
           <div className="col news-option">
-            <img src="images/star.png" className="img-fluid" /> Following
+            <a href="#" className="fa fa-star"/>Following
           </div>
           <div className="col news-option">
-            <img src="images/mail.png" className="img-fluid" />
-            <a href="#">Get Email updates</a>
+            <a href="#" className="fa fa-envelope"/>Get Email updates
           </div>
           <div className="col">
           </div>
@@ -104,7 +106,7 @@ const topNews = () => {
       </div>
 
       <div className="container-elements">
-        <img src="images\home\Homevideo.png" alt="" className="img-fluid" />
+        <img src={homeVideo} alt="" className="img-fluid" />
       </div>
 
       <div className="row-center">
@@ -296,7 +298,7 @@ const topNews = () => {
         </div>
       </div>
       <div className="container-elements">
-        <img src="images\home\Homelive.png" alt="" className="img-fluid" />
+        <img src={homeLive} alt="" className="img-fluid" />
       </div>
 
     </div>
