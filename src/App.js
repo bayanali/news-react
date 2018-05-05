@@ -12,7 +12,7 @@ import NavBar from './components/Header/navBar';
 import Article from './containers/article/article';
 import Header from './components/Header/header';
 import NotFound from './containers/Error/NotFound';
-import Home from './containers/home/Home';
+import Home from './containers/Home/home';
 import Style from './containers/Style/Style';
 import InternalServer from './containers/Error/InternalServer';
 import Search from './containers/Search/Search';
