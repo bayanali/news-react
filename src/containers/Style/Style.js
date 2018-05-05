@@ -25,7 +25,7 @@ export default class Style extends Component {
         <Carousel />
 
         <div id="top_news" className="container">
-        <h5  className="headingline"><span className="section-heading">Top News </span></h5>
+        <h5 className="headingline"><span className="section-heading2">Top News </span></h5>
         <hr className="hrstyle"/>
 
         <div className="container">
@@ -54,7 +54,7 @@ export default class Style extends Component {
                     <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                   </div>
                   <div className="col">
-                    <a className="post-details" href="#">Read more</a>
+                    <a className="post-details link" href="#">Read more</a>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default class Style extends Component {
             </div>
             <div className="col news-option">
               <img src={mail} className="img-fluid"/>
-              <a href="#">Get Email updates</a>
+              <a className="link" href="#">Get Email updates</a>
             </div>
             <div className="col">
             </div>
@@ -188,7 +188,7 @@ export default class Style extends Component {
                     <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                   </div>
                   <div className="col">
-                    <a className="post-details" href="#">Read more</a>
+                    <a className="post-details link" href="#">Read more</a>
                   </div>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default class Style extends Component {
                     <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                   </div>
                   <div className="col">
-                    <a className="post-details" href="#">Read more</a>
+                    <a className="post-details link" href="#">Read more</a>
                   </div>
                 </div>
               </div>
@@ -253,7 +253,7 @@ export default class Style extends Component {
                       <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                     </div>
                     <div className="col">
-                      <a className="post-details" href="#">Read more</a>
+                      <a className="post-details link" href="#">Read more</a>
                     </div>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default class Style extends Component {
                       <img src={time} className="img-fluid post-details-img"/> 25 mins ago
                     </div>
                     <div className="col">
-                      <a className="post-details" href="#">Read more</a>
+                      <a className="post-details link" href="#">Read more</a>
                     </div>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export default class Style extends Component {
             <br/><br/>
             <div className = "cont">
               <img src = {article} className = "img-fluid"/>
-              <button type="button" name="button" className = "btnn">Read More</button>
+              <button type="button" name="button" className = "clear-btn">Read More</button>
             </div>
 
 
