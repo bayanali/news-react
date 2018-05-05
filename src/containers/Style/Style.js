@@ -4,7 +4,7 @@ import Carousel from '../../components/Header/carousel';
 import './Style.css';
 
 export default class Style extends Component {
-  
+
   render() {
     // NOTE: Please don't remove the Carousel; just put your work beneath it.
     return (
@@ -332,13 +332,6 @@ export default class Style extends Component {
           </div>
         </div>
         <br/><br/><br/>
-
-
-
-
-
-
-
       </div>
     );
   }

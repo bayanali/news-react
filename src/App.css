@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'latosemibold';
+    src: local('Lato');
+    src: url(./CSS/fonts/Lato-Semibold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: local('Lato');
+    src: url(./CSS/fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: local('Lato');
+    src: url(./CSS/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'latothin';
+    src: local('Lato');
+    src: url(./CSS/fonts/Lato-Thin.ttf) format('truetype');
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 970px;
@@ -6,7 +30,7 @@
 
 body {
     background: #f3f3f3;
-    font-family: 'lato';
+    font-family: 'lato' !important;
     /*    to go with new container size*/
     font-size: 80%;
 }
