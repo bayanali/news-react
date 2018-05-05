@@ -11,6 +11,11 @@ a:hover {
     color: #c93034 !important;
     text-decoration: none !important;
 }
+@font-face {
+    font-family: 'latosemibold';
+    src: local('Lato');
+    src: url(./CSS/fonts/Lato-Semibold.ttf) format('truetype');
+}
 
 @font-face {
     font-family: 'latolight';
