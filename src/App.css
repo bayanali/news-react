@@ -1,7 +1,29 @@
 @font-face {
-    font-family: 'latosemibold';
-    src: local('Lato');
-    src: url(./CSS/fonts/Lato-Semibold.ttf) format('truetype');
+  font-family: 'latosemibold';
+  src: local('Lato');
+  src: url(./CSS/fonts/Lato-Semibold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'latolight';
+  src: local('Lato');
+  src: url(./CSS/fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'lato';
+  src: local('Lato');
+  src: url(./CSS/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'latothin';
+  src: local('Lato');
+  src: url(./CSS/fonts/Lato-Thin.ttf) format('truetype');
+}
+
+.App {
+  text-align: center;
 }
 
 @font-face {

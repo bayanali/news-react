@@ -25,9 +25,9 @@
   text-indent: inherit;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+.link {
+  text-decoration: none !important;
+  color: #000 !important;
 }
 
 .subscribe-link a {
@@ -35,9 +35,9 @@ a {
   color: white;
 }
 
-a:hover {
-  color: #c93034;
-  text-decoration: underline;
+.link:hover {
+  color: #c93034 !important;
+  text-decoration: underline !important;
 }
 
 .event-btn {
@@ -131,3 +131,43 @@ a:hover {
   font-weight: normal;
 }
 
+.news-btn {
+  background-color: #c93034 !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-color: #c93034 !important;
+  border-radius: 0px;
+}
+
+.clear-btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 12px;
+  /* padding: 12px 24px; */
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.section-heading2 {
+  padding: 5px 25px 5px 25px;
+  font-size: 16px;
+  line-height: 1.833;
+  background-color: #c93034;
+  color: #fff;
+  font-family: "Lato";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.headingline {
+  margin-bottom: 0px;
+}

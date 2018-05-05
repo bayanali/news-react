@@ -37,20 +37,6 @@
     text-indent: inherit;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.subscribe-link a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: #c93034;
-    text-decoration: underline;
-}
 
 .event-btn {
     color: #fff !important;
