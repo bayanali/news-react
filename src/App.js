@@ -15,6 +15,7 @@ import NotFound from './containers/Error/NotFound';
 import Home from './containers/Home/Home';
 import Style from './containers/Style/Style';
 import InternalServer from './containers/Error/InternalServer';
+import Search from './containers/Search/Search';
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
               <Route path="/style" render={() => <div> <NavBar color={transparent}/> <Style/> </div>} />
               <Route path="/article" render={() => <div> <NavBar color={transparent}/> <Article/> </div>} />
               <Route path="/not-found" render={() => <div><NavBar color={black}/> <NotFound/> </div>} />
+              <Route path="/search" render={() => <div><NavBar color={black}/> <Search/> </div>} />
               <Route path="/internal-server-error" render={() => <div><NavBar color={black}/> <InternalServer/> </div>} />
             <Footer/>
           </div>
