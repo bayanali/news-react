@@ -1,29 +1,15 @@
-@font-face {
-  font-family: 'latosemibold';
-  src: local('Lato');
-  src: url(./CSS/fonts/Lato-Semibold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'latolight';
-  src: local('Lato');
-  src: url(./CSS/fonts/Lato-Light.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'lato';
-  src: local('Lato');
-  src: url(./CSS/fonts/Lato-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'latothin';
-  src: local('Lato');
-  src: url(./CSS/fonts/Lato-Thin.ttf) format('truetype');
-}
-
 .App {
   text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+a:hover {
+    color: #c93034 !important;
+    text-decoration: none !important;
 }
 
 @font-face {
@@ -46,7 +32,7 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 970px;
+        max-width: 970px !important;
     }
 }
 

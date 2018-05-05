@@ -6,30 +6,6 @@
   margin-bottom: 50px;
 }
 
-.big-post {
-  background-color: #fff;
-  /*    font-weight: bold;*/
-  text-align: left;
-  background-clip: content-box;
-  text-indent: inherit;
-}
-
-.post-details {
-  font-family: 'latolight';
-  text-transform: uppercase;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 2.723;
-}
-
-.small-post {
-  background-color: #fff;
-  font-weight: bold;
-  text-align: justify;
-  text-align: left;
-  background-clip: content-box;
-}
-
 .container-elements{
   margin: 50px 0px 50px 0px;
 }
@@ -115,6 +91,7 @@
   color: #a2a2a0;
   margin: 0px;
   padding: 20px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -149,13 +126,14 @@
 
 }
 
+
 .sliderbody p{
     font-size: 12px;
     font-family: "Lato";
     text-align: justify;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.59;
     padding-left: 20px;
     padding-right: 20px;
@@ -173,7 +151,7 @@
 }
 
 .homeslider-right-footer {
-  margin-left: 29px;
+  margin-left: 100px;
   /* margin-top: 30px; */
   margin-right: 50px;
   text-transform: uppercase;
@@ -186,7 +164,7 @@
     font-family: 'latosemibold';
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 75%;
+    font-size: 70% !important;
 }
 
 

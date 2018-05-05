@@ -1,7 +1,7 @@
 #a {
-  color: #fff;
+  color: #fff !important;
 }
 
 #a:hover {
-  color: #c93034;
+  color: #c93034 !important;
 }

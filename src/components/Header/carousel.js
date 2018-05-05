@@ -13,7 +13,7 @@ const carousel = () => {
       <Carousel.Item className="inner-carousel">
         <img alt="first slide" src={carouselItems[0].imgsrc} className="d-block w-100" />
         <Carousel.Caption className="carousel-caption caption-header">
-          {carouselItems[0].title}
+          <h4>{carouselItems[0].title}</h4>
           <p>{carouselItems[0].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -21,7 +21,7 @@ const carousel = () => {
       <Carousel.Item className="inner-carousel">
         <img alt="first slide" src={carouselItems[1].imgsrc} className="d-block w-100" />
         <Carousel.Caption className="carousel-caption caption-header">
-          {carouselItems[1].title}
+        <h4>{carouselItems[1].title}</h4>
           <p>{carouselItems[1].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -29,7 +29,7 @@ const carousel = () => {
       <Carousel.Item className="inner-carousel">
         <img alt="first slide" src={carouselItems[2].imgsrc} className="d-block w-100" />
         <Carousel.Caption className="carousel-caption caption-header">
-          {carouselItems[2].title}
+        <h4>{carouselItems[2].title}</h4>
           <p>{carouselItems[2].body}</p>
         </Carousel.Caption>
       </Carousel.Item>

@@ -183,7 +183,7 @@
 .nav-tabs .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover {
     color: #c93034;
-    font-weight: bold;
+    font-weight: latosemibold;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -435,11 +435,14 @@
 /*custom caption!*/
 
 .caption-header {
-    font-family: 'latosemibold' !important;
-    font-size: 150% !important;
-    font-weight: bold !important;
+    font-family: 'lato' !important;
+    font-size: 140% !important;
 }
 
+.caption-header h4{
+  font-family: 'latosemibold' !important;
+  font-weight: 900 !important;
+}
 .caption-header p {
     font-size: 75% !important;
     font-family: 'latothin' !important;

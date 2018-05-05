@@ -30,13 +30,13 @@
 }
 
 .page-footer h6 {
-  color: rgb(163, 163, 163);
+  color: rgb(163, 163, 163) !important;
   font-size: 11px;
 }
 
 .aEdit1 {
   font-size: 13px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
 
 .aEdit2 {
   font-size: 13px;
-  color: rgb(163, 163, 163);
+  color: rgb(163, 163, 163) !important;
   text-transform: uppercase;
   line-height: 1.737;
 }
@@ -60,12 +60,12 @@
 }
 
 .page-footer .icons a {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   text-decoration: none;
 }
 
 .page-footer a:hover {
-  color: rgb(201, 48, 52);
+  color: rgb(201, 48, 52) !important;
   text-decoration: none;
 }
 

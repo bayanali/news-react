@@ -6,7 +6,6 @@ import HomeCover from './homeCover'
 import Gallery from './gallery'
 import AdSpace from './adSpace'
 
-
 export default class Home extends Component {
   render() {
 

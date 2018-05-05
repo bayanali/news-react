@@ -8,7 +8,7 @@ import mark from '../../images/home/fb.jpg';
 import avatar from '../../images/avatar.png';
 import homeVideo from '../../images/home/Homevideo.png';
 import homeLive from '../../images/home/Homelive.png';
-import {Carousel} from 'react-bootstrap'
+import {Carousel, Tab, Nav, NavItem, Row, Col} from 'react-bootstrap'
 
 const topNews = () => {
   const news = [
@@ -149,9 +149,9 @@ const topNews = () => {
         <br/>
 
         <div id="myTabContent" className="tab-content">
-
           <div className="tab-pane fade active show" id="sports">
-            <Carousel id="carousel-sports">
+
+          <Carousel id="carousel-sports">
               <Carousel.Item>
                   <div className="row no-gutters">
                     <div className="col-7 ">
@@ -165,10 +165,10 @@ const topNews = () => {
                         <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
                         <hr className="hr-home-slider"/>
                         <div className="row homeslider-right-footer">
-                          <div className="col-4">
-                            <a href="#"> read more</a>
+                          <div className="offset-1 col-4">
+                            <a href="#"> read more </a>
                           </div>
-                          <div className="offset-5 col-3">
+                          <div className="offset-4 col-3">
                             <a href="#" className="fa fa-facebook"></a>
                             <a href="#" className="fa fa-twitter"></a>
                             <a href="#" className="fa fa-linkedin"></a>
@@ -192,10 +192,10 @@ const topNews = () => {
                         <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
                         <hr className="hr-home-slider"/>
                         <div className="row homeslider-right-footer">
-                          <div className="col-4">
+                          <div className="offset-1 col-4">
                             <a href="#"> read more </a>
                           </div>
-                          <div className="offset-5 col-3">
+                          <div className="offset-4 col-3">
                             <a href="#" className="fa fa-facebook"></a>
                             <a href="#" className="fa fa-twitter"></a>
                             <a href="#" className="fa fa-linkedin"></a>
@@ -224,10 +224,10 @@ const topNews = () => {
                       <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
                       <hr className="hr-home-slider"/>
                       <div className="row homeslider-right-footer">
-                        <div className="col-4">
+                        <div className="offset-1 col-4">
                           <a href="#"> read more</a>
                         </div>
-                        <div className="offset-5 col-3">
+                        <div className="offset-4 col-3">
                           <a href="#" className="fa fa-facebook"></a>
                           <a href="#" className="fa fa-twitter"></a>
                           <a href="#" className="fa fa-linkedin"></a>
@@ -251,10 +251,10 @@ const topNews = () => {
                       <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
                       <hr className="hr-home-slider"/>
                       <div className="row homeslider-right-footer">
-                        <div className="col-4">
+                        <div className="offset-1 col-4">
                           <a href="#"> read more </a>
                         </div>
-                        <div className="offset-5 col-3">
+                        <div className="offset-4  col-3">
                           <a href="#" className="fa fa-facebook"></a>
                           <a href="#" className="fa fa-twitter"></a>
                           <a href="#" className="fa fa-linkedin"></a>
@@ -278,4 +278,139 @@ const topNews = () => {
   );
 }
 
-export default topNews
+export default topNews;
+
+
+/*
+
+<Tab.Container defaultActiveKey="sports" id="left-tabs-example">
+  <Row className="clearfix">
+    <Col sm={4}>
+    <Nav bsStyle="pills" stacked>
+      <NavItem eventKey="sports">Tab 1</NavItem>
+      <NavItem eventKey="life">Tab 2</NavItem>
+    </Nav>
+    </Col>
+    <Col sm={8}>
+    <Tab.Content animation true>
+      <Tab.Pane eventKey="sports">
+      <Carousel id="carousel-sports">
+          <Carousel.Item>
+              <div className="row no-gutters">
+                <div className="col-7 ">
+                  <img src={salah} alt="" className="img-fluid" />
+                </div>
+                <div className="col-5 homeslider-right">
+                  <div className="slidertitle">
+                    <p> Mohamed Salah can improve in front of goal, says Jurgen Klopp </p>
+                  </div>
+                  <div className="sliderbody">
+                    <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
+                    <hr className="hr-home-slider"/>
+                    <div className="row homeslider-right-footer">
+                      <div className="col-4">
+                        <a href="#"> read more</a>
+                      </div>
+                      <div className="offset-5 col-3">
+                        <a href="#" className="fa fa-facebook"></a>
+                        <a href="#" className="fa fa-twitter"></a>
+                        <a href="#" className="fa fa-linkedin"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <div className="row no-gutters">
+                <div className="col-7 ">
+                  <img src={salah} alt="" className="img-fluid" />
+                </div>
+                <div className="col-5 homeslider-right">
+                  <div className="slidertitle">
+                    <p> Mohamed Salah can improve in front of goal, says Jurgen Klopp </p>
+                  </div>
+                  <div className="sliderbody">
+                    <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
+                    <hr className="hr-home-slider"/>
+                    <div className="row homeslider-right-footer">
+                      <div className="col-4">
+                        <a href="#"> read more </a>
+                      </div>
+                      <div className="offset-5 col-3">
+                        <a href="#" className="fa fa-facebook"></a>
+                        <a href="#" className="fa fa-twitter"></a>
+                        <a href="#" className="fa fa-linkedin"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel.Item>
+        </Carousel>
+      </Tab.Pane>
+      <Tab.Pane eventKey="life">
+      <Carousel id="carousel-life">
+        <Carousel.Item>
+            <div className="row no-gutters">
+              <div className="col-7 ">
+                <img src={mark} alt="" className="img-fluid" />
+              </div>
+              <div className="col-5 homeslider-right">
+                <div className="slidertitle">
+                  <p> soooooooooooooooooooso </p>
+                </div>
+                <div className="sliderbody">
+                  <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
+                  <hr className="hr-home-slider"/>
+                  <div className="row homeslider-right-footer">
+                    <div className="col-4">
+                      <a href="#"> read more</a>
+                    </div>
+                    <div className="offset-5 col-3">
+                      <a href="#" className="fa fa-facebook"></a>
+                      <a href="#" className="fa fa-twitter"></a>
+                      <a href="#" className="fa fa-linkedin"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="row no-gutters">
+              <div className="col-7 ">
+                <img src={mark} alt="" className="img-fluid" />
+              </div>
+              <div className="col-5 homeslider-right">
+                <div className="slidertitle">
+                  <p> Mohamed Salah can improve in front of goal, says Jurgen Klopp </p>
+                </div>
+                <div className="sliderbody">
+                  <p> Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the Reds since his £36million move from Roma last summer Liverpool boss Jurgen Klopp believes Mohamed Salah's scoring record could be even better this season. The Egyptian's scored 12 goals in 17 appearances for the</p>
+                  <hr className="hr-home-slider"/>
+                  <div className="row homeslider-right-footer">
+                    <div className="col-4">
+                      <a href="#"> read more </a>
+                    </div>
+                    <div className="offset-5 col-3">
+                      <a href="#" className="fa fa-facebook"></a>
+                      <a href="#" className="fa fa-twitter"></a>
+                      <a href="#" className="fa fa-linkedin"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </Tab.Pane>
+    </Tab.Content>
+  </Col>
+</Row>
+</Tab.Container>
+
+
+*/
