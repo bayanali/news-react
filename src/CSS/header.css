@@ -244,6 +244,7 @@
     width: 100% !important;
 }
 
+
 @media all and (transform-3d),
 (-webkit-transform-3d) {
     .carousel-inner > .item {
@@ -358,7 +359,7 @@
     outline: 0;
     opacity: .9;
 }
-
+/*
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left,
@@ -396,8 +397,8 @@
 
 .carousel-control .icon-next:before {
     content: '\203a';
-}
-
+} */
+/*
 .carousel-indicators {
     position: absolute;
     bottom: 10px;
@@ -428,7 +429,7 @@
     height: 12px;
     margin: 0;
     background-color: #fff;
-}
+} */
 
 
 /*custom caption!*/

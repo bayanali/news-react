@@ -43,11 +43,12 @@
 .event-btn {
   color: #fff !important;
   border-color: #fff !important;
-  border-radius: 0px;
+  border-radius: 0px !important;
 }
 
 .event-btn:hover {
   background-color: #c93034 !important;
+  border-color: rgb(0,0,0,0) !important;
 }
 
 
@@ -133,10 +134,10 @@
 
 .news-btn {
   background-color: #c93034 !important;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
   border-color: #c93034 !important;
-  border-radius: 0px;
+  border-radius: 0px !important;
 }
 
 .clear-btn {
@@ -156,6 +157,15 @@
   height: 30px;
   cursor: pointer;
 }
+
+.caption {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+  width: 100%;
+  color: #fff;
+  font-family: "latosemibold";
+} 
 
 .section-heading2 {
   padding: 5px 25px 5px 25px;
