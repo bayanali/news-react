@@ -19,12 +19,19 @@ import image1 from '../../images/img1.jpg';
 import { Carousel } from 'react-bootstrap'
 
 export default class Style extends Component {
+  state = {
+    carouselItems: [
+      {imgsrc: image1, title:"Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A", body:"Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor..."},
+      {imgsrc: image1, title:"Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A", body:"Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor..."},
+      {imgsrc: image1, title:"Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A", body:"Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor..."}
+    ]
+  }
 
   render() {
     // NOTE: Please don't remove the Carousel; just put your work beneath it.
     return (
       <div>
-        <Navcarousel />
+        <Navcarousel items={this.state.carouselItems}/>
 
         <div id="top_news" className="container">
           <h5 className="headingline"><span className="section-heading2">Top News </span></h5>

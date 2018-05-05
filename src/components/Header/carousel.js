@@ -2,35 +2,30 @@ import React from 'react'
 import {Carousel} from 'react-bootstrap'
 import fb from '../../images/home/fb.jpg'
 
-const carousel = () => {
-  const carouselItems = [
-    {imgsrc: fb, title:"News of Facebook's secret tool to delete executive messages caps days of chaos", body:"As Sheryl Sandberg mounts apology tour, company is under fire again over special privacy privileges not granted to regular users"},
-    {imgsrc: fb, title:"News of Facebook's secret tool to delete executive messages caps days of chaos", body:"As Sheryl Sandberg mounts apology tour, company is under fire again over special privacy privileges not granted to regular users"},
-    {imgsrc: fb, title:"News of Facebook's secret tool to delete executive messages caps days of chaos", body:"As Sheryl Sandberg mounts apology tour, company is under fire again over special privacy privileges not granted to regular users"}
-  ];
+const carousel = (props) => {
   return (
     <Carousel className="main-carousel">
       <Carousel.Item className="inner-carousel">
-        <img alt="first slide" src={carouselItems[0].imgsrc} className="d-block w-100" />
+        <img alt="first slide" src={props.items[0].imgsrc} className="d-block w-100" />
         <Carousel.Caption className="carousel-caption caption-header">
-          <h4>{carouselItems[0].title}</h4>
-          <p>{carouselItems[0].body}</p>
+          <h4>{props.items[0].title}</h4>
+          <p>{props.items[0].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item className="inner-carousel">
-        <img alt="first slide" src={carouselItems[1].imgsrc} className="d-block w-100" />
+        <img alt="first slide" src={props.items[1].imgsrc} className="d-block w-100" />
         <Carousel.Caption className="carousel-caption caption-header">
-        <h4>{carouselItems[1].title}</h4>
-          <p>{carouselItems[1].body}</p>
+          <h4>{props.items[1].title}</h4>
+          <p>{props.items[1].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item className="inner-carousel">
-        <img alt="first slide" src={carouselItems[2].imgsrc} className="d-block w-100" />
+        <img alt="first slide" src={props.items[2].imgsrc} className="d-block w-100" />
         <Carousel.Caption className="carousel-caption caption-header">
-        <h4>{carouselItems[2].title}</h4>
-          <p>{carouselItems[2].body}</p>
+          <h4>{props.items[2].title}</h4>
+          <p>{props.items[2].body}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
