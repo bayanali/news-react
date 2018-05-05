@@ -154,7 +154,7 @@ export default class Style extends Component {
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </Carousel.Caption>
             </Carousel.Item>
-          </Carousel>;
+          </Carousel>
         {/* <div id="photos-carousel" className="carousel slide main-carousel" data-ride="carousel">
             <ol className="carousel-indicators">
               <li data-target="#photos-carousel" data-slide-to="0" className="active"></li>
