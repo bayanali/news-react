@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './article.css';
 import authorPhoto from '../../images/article/people-3209886_960_720.png';
 import time from '../../images/article/noun_126067_cc.png';
@@ -12,20 +12,41 @@ import Carousel from '../../components/Header/carousel';
 import logo from '../../images/logo.png';
 import image1 from '../../images/img1.jpg';
 
-const article = () => {
-  const carouselItems = [
+export default class article extends Component {
+
+state = {
+    carouselItems :[
     {imgsrc: image1, title:"Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A", body:"Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor..."},
     {imgsrc: image1, title:"Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A", body:"Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor..."},
     {imgsrc: image1, title:"Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A", body:"Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor..."}
-  ]
+  ],
+  paragraph1: '',
+  paragraph2: ''
+};
 
-  // NOTE: Please don't remove the Carousel; just put your work beneath it.
-  return (
+componentDidMount() {
+  this.callApi()
+    .then(res => this.setState({ paragraph1: res.body.paragraph1,
+                                 paragraph2: res.body.paragraph2}))
+    .catch(err => console.log(err));
+}
+
+callApi = async () => {
+  const response = await fetch('/api/data');
+  const body = await response.json();
+
+  if (response.status !== 200) throw Error(body.message);
+
+  return body;
+};
+
+  //NOTE: Please don't remove the Carousel; just put your work beneath it.
+  render (){
+    return(
     <div>
+      <div>
 
-    <div>
-
-      <Carousel items={carouselItems}/>
+      <Carousel items={this.state.carouselItems}/>
 
       <div id="article" class="container">
         <br/>
@@ -36,7 +57,7 @@ const article = () => {
 
         <div>
           <p class="article-body">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            {this.state.paragraph1}
           </p>
           <br/>
           <br/>
@@ -47,7 +68,7 @@ const article = () => {
           <br/>
           <br/>
           <p class="article-body">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            {this.state.paragraph2}
           </p>
           <br/></div>
 
@@ -109,8 +130,6 @@ const article = () => {
     <br/>
     <br/>
     <br/>
-  </div>
-)
-};
-
-export default article;
+  </div>);
+  }
+}

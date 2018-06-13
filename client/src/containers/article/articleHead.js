@@ -1,18 +1,37 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './article.css';
 import ArticleHeadTime from './articleHeadTime';
 import authorPhoto from '../../images/article/people-3209886_960_720.png';
 
+export default class articleHead extends Component {
 
-const articleHead = () => {
-  const articleTitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
-  const articleAuthoer = "AMRUISMAIIL";
+state = {
+  articleTitle : "",
+  articleAuthoer : ""
+}
 
+componentDidMount() {
+  this.callApi()
+    .then(res => this.setState({ articleTitle :res.title,
+                                 articleAuthoer: res.author}))
+    .catch(err => console.log(err));
+}
+
+callApi = async () => {
+  const response = await fetch('/api/data');
+  const body = await response.json();
+
+  if (response.status !== 200) throw Error(body.message);
+
+  return body;
+};
+
+render(){
 return (
     <div>
       <div class = "row">
         <h2 id="article-title">
-          {articleTitle}
+          {this.state.articleTitle}
         </h2>
       </div>
 
@@ -20,7 +39,7 @@ return (
         <br/>
           <div id="article-author" class="col">
             <img src = {authorPhoto}/>
-            {articleAuthoer}
+            {this.state.articleAuthoer}
           </div>
 
             <br/>
@@ -35,6 +54,5 @@ return (
   </div>
 
     )
-};
-
-export default articleHead;
+  }
+}
